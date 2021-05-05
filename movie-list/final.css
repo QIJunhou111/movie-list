@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: fantasy;/* 字体 */
+}
+html, body{
+  height: 100%;
+}
+body{
+  background-color: #fff8dc;/* 网页整体背景颜色 */
+}
+h1{
+  text-align: center;
+}
+.side-menu{
+  width: 300px;
+  height: 100%;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;/* 这是上下边距 */
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 10px 0px 10px hsla(0, 40%, 30%, 0.4);/* 这是侧边栏旁边的阴影 */
+}
+nav a{
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+nav a+a::before{
+  /* 让菜单下面的白线两头离边远一点 */
+  content: "";
+  position: absolute;
+  border-top: 1px solid #000000;
+  left: 10px;
+  top: 0;
+  right: 10px;
+}
